@@ -1,0 +1,33 @@
+{
+  "originHash" : "4ed5c4c02f1bf1942c37e8f680815c97069a41c24fe696f84b4700e647ff9fbb",
+  "pins" : [
+    {
+      "identity" : "dicontainer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Roy-wonji/DiContainer",
+      "state" : {
+        "revision" : "e5261e5a1a9433eb501f498a4323bec5f4611020",
+        "version" : "1.0.9"
+      }
+    },
+    {
+      "identity" : "logmacro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Roy-wonji/LogMacro.git",
+      "state" : {
+        "revision" : "2ef33e485dc87c9afc9b5d680749d6926c352718",
+        "version" : "1.0.8"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

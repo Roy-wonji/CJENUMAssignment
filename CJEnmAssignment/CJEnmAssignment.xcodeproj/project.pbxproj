@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7F44891D2E07EA5A0057839A /* DiContainer in Frameworks */ = {isa = PBXBuildFile; productRef = 7F44891C2E07EA5A0057839A /* DiContainer */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7F4488D22E07E0320057839A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		7F4488DB2E07E0320057839A /* CJEnmAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJEnmAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7F4489252E07ED700057839A /* Exceptions for "CJEnmAssignment" folder in "CJEnmAssignment" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 7F4488C32E07E0300057839A /* CJEnmAssignment */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7F4488C62E07E0300057839A /* CJEnmAssignment */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7F4489252E07ED700057839A /* Exceptions for "CJEnmAssignment" folder in "CJEnmAssignment" target */,
+			);
 			path = CJEnmAssignment;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F44891D2E07EA5A0057839A /* DiContainer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = CJEnmAssignment;
 			packageProductDependencies = (
+				7F44891C2E07EA5A0057839A /* DiContainer */,
 			);
 			productName = CJEnmAssignment;
 			productReference = 7F4488C42E07E0300057839A /* CJEnmAssignment.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = 7F4488BB2E07E0300057839A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7F44891B2E07EA590057839A /* XCRemoteSwiftPackageReference "DiContainer" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7F4488C52E07E0300057839A /* Products */;
 			projectDirPath = "";
@@ -400,6 +422,7 @@
 				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CJEnmAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +451,7 @@
 				DEVELOPMENT_TEAM = N94CS4N6VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CJEnmAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F44891B2E07EA590057839A /* XCRemoteSwiftPackageReference "DiContainer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Roy-wonji/DiContainer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F44891C2E07EA5A0057839A /* DiContainer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F44891B2E07EA590057839A /* XCRemoteSwiftPackageReference "DiContainer" */;
+			productName = DiContainer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7F4488BC2E07E0300057839A /* Project object */;
 }

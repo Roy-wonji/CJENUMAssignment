@@ -19,6 +19,8 @@ final class ProductListViewModel {
   var isLoading: Bool = false
   /// 에러 메시지
   var errorMessage: String? = nil
+  var displayedCount: Int = 20
+   let pageSize = 20
 
   // MARK: - Dependencies
   private let repository: ProductListRepositoryProtocol
@@ -26,7 +28,7 @@ final class ProductListViewModel {
 
   // MARK: - Initialization
   /// 의존성 주입 생성자
-  public init(repository: ProductListRepositoryProtocol = ProductReposiotury()) {
+  public init(repository: ProductListRepositoryProtocol = ProductListReposiotury()) {
     self.repository = repository
     self.useCase = ProductListUseCase(repository: repository)
   }

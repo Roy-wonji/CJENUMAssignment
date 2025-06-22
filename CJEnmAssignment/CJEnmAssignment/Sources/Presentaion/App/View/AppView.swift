@@ -14,7 +14,6 @@ struct AppView: View {
       NavigationStack(path: $coordinator.path) {
         ProductListView()
           .navigationDestination(for: AppRoute.self, destination: makeDestination)
-          
       }
 
     }
@@ -25,7 +24,8 @@ struct AppView: View {
       case .mainProfuctList:
         ProductListView()
       case .deatilWebView(let url):
-        WebView(urlToLoad: url)
+        WebViews(url: url)
+          .navigationBarBackButtonHidden()
       }
     }
 }

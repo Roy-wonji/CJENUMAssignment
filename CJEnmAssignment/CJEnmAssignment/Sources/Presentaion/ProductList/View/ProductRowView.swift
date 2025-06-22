@@ -50,6 +50,7 @@ struct ProductRowView: View {
       withAnimation(.easeInOut(duration: 0.2)) { isPressed = pressing }
     }, perform: {})
     .accessibilityElement(children: .combine)
+    .accessibilityIdentifier("ProductRowButton_\(product.id)")
     .accessibilityLabel("\(product.name), 가격 \(product.price)원, 할인율 \(product.discountRate)%")
   }
 }

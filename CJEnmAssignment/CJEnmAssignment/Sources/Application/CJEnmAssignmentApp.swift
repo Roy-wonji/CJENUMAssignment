@@ -11,17 +11,11 @@ import SwiftUI
 struct CJEnmAssignmentApp: App {
   @StateObject private var coordinator = AppCoordinator()
   @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-  var repository  = ProductReposiotury()
 
     var body: some Scene {
         WindowGroup {
           AppView()
             .environmentObject(coordinator)
-            .onAppear {
-              Task {
-                try? await repository.fetchProducts()
-              }
-            }
         }
     }
 }

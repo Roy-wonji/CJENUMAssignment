@@ -41,7 +41,7 @@ public extension RegisterModule {
 
   var productListRepository: () -> Module {
     makeDependency(ProductListRepositoryProtocol.self) {
-      ProductReposiotury()
+      ProductListReposiotury()
     }
   }
 }
